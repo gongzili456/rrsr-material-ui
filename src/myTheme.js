@@ -1,13 +1,8 @@
 import {
-  grey700,
-  grey900,
-  blueGrey100,
-  blueGrey500,
-  darkBlack,
-  grey300,
-  lightBlack,
-  purpleA200,
-  white
+  cyan500, cyan700,
+  pinkA200,
+  grey100, grey300, grey400, grey500,
+  white, darkBlack, fullBlack
 } from 'material-ui/styles/colors'
 import {fade} from 'material-ui/utils/colorManipulator'
 
@@ -18,27 +13,30 @@ export default {
     desktopGutterMore: 32,
     desktopGutterLess: 16,
     desktopGutterMini: 8,
-    desktopKeylineIncrement: 50, // 64
+    desktopKeylineIncrement: 64,
     desktopDropDownMenuItemHeight: 32,
-    desktopDropDownMenuFontSize: 14,
-    desktopLeftNavMenuItemHeight: 48,
+    desktopDropDownMenuFontSize: 15,
+    desktopDrawerMenuItemHeight: 48,
     desktopSubheaderHeight: 48,
     desktopToolbarHeight: 56
   },
   fontFamily: 'Roboto, sans-serif',
   palette: {
-    primary1Color: grey700,
-    primary2Color: darkBlack,
-    primary3Color: lightBlack,
-    accent1Color: purpleA200,
-    accent2Color: blueGrey100,
-    accent3Color: blueGrey500,
-    textColor: blueGrey500,
-    alternateTextColor: grey300,
+    primary1Color: cyan500,
+    primary2Color: cyan700,
+    primary3Color: grey400,
+    accent1Color: pinkA200,
+    accent2Color: grey100,
+    accent3Color: grey500,
+    textColor: darkBlack,
+    secondaryTextColor: fade(darkBlack, 0.54),
+    alternateTextColor: white,
     canvasColor: white,
-    borderColor: grey700,
+    borderColor: grey300,
     disabledColor: fade(darkBlack, 0.3),
-    pickerHeaderColor: grey700
+    pickerHeaderColor: cyan500,
+    clockCircleColor: fade(darkBlack, 0.07),
+    shadowColor: fullBlack
   },
   avatar: {
     borderColor: white
